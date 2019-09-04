@@ -1,13 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 
-import Todos from './components/Todos';
+import TodoItem from './components/TodoItem';
 
 function App() {
   return (
-    <div className="App">
-      <Todos />
+    <div className="todo-list">
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
     </div>
   );
 }
