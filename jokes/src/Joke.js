@@ -1,11 +1,13 @@
 import React from "react"
 
-function Jokes(props) {
-  return (
-    <div className="jokes">
-      <h3>{props.joke.question}</h3>
-      <p>{props.joke.punchLine}</p>
-    </div>
-  )
+function Joke(props) {
+    return (
+        <div>
+            <h3 style={{display: !props.question && "none"}}>Question: {props.question}</h3>
+            <p style={{color: !props.question && "#888888"}}>Answer: {props.punchLine}</p>
+            <hr/>
+        </div>
+    )
 }
-export default Jokes
+
+export default Joke
