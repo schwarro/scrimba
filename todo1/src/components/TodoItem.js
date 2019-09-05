@@ -7,7 +7,7 @@ function TodoItem(props) {
       <input
         type="checkbox"
         checked={props.item.completed}
-        onClick={() => console.log("Clicked")}
+        onClick={() => props.handleChange(props.item.id)}
       />
       <h3>Todo: {props.item.text}</h3>
       <hr/>
