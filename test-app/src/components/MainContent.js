@@ -2,7 +2,16 @@ import React from "react"
 
 function MainContent() {
   return (
-    <h1>This is the Main Content</h1>
+    <div>
+      <input type="checkbox" />
+      <p>Placeholder Text</p>
+
+      <input type="checkbox" />
+      <p>Placeholder Text</p>
+
+      <input type="checkbox" />
+      <p>Placeholder Text</p>  
+    </div>
   )
 }
 
