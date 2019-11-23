@@ -1,11 +1,13 @@
 import React from "react"
-import MyInfo from './components/MyInfo.js';
-import Footer from './components/Footer.js'
+import Navbar from "./components/Navbar.js"
+import MainContent from "./components/MainContent.js"
+import Footer from "./components/Footer.js"
 
 function App() {
   return (
     <div>
-      <MyInfo />
+      <Navbar />
+      <MainContent />
       <Footer />
     </div>
   )
