@@ -2,7 +2,7 @@ import React from "react"
 
 function Header() {
   return (
-    <header>
+    <header className="navbar">
       This is the header.
     </header>
   )
