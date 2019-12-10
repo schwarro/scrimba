@@ -41,6 +41,3 @@ function App() {
 }
 
 export default App
-
-
-// Left off at styling react with css classes

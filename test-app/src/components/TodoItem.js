@@ -10,3 +10,6 @@ function TodoItem() {
 }
 
 export default TodoItem
+
+
+// Left off at react props
