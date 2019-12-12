@@ -1,8 +1,9 @@
 import React from "react"
-import MainContent from "./components/MainContent.js"
-import Header from "./components/Header.js"
-import Footer from "./components/Footer.js"
-import ContactCard from "./components/ContactCard.js"
+// import MainContent from "./components/MainContent.js"
+// import Header from "./components/Header.js"
+// import Footer from "./components/Footer.js"
+// import ContactCard from "./components/ContactCard.js"
+import Joke from "./components/Joke.js"
 
 
 function App() {
@@ -31,48 +32,38 @@ function App() {
   // }
 
   return (
-    <div className="contacts">
-      <ContactCard
-          contact={{
-            name: "Mr. Whiskerson",
-            imgUrl: "http://placekitten.com/300/200",
-            phone: "(212) 555-1234",
-            email: "mr.whiskaz@catnap.meow"
-          }}
+    <div>
+      <Joke
+        joke={{
+          setUp: "What's the best thing about Switzerland?",
+          punchline: "I don't know, but the flag is a big plus"
+        }}
       />
-
-      <ContactCard
-          contact={{
-            name:"Fluffykins",
-            imgUrl:"http://placekitten.com/400/200",
-            phone:"(212) 555-2345",
-            email:"fluff@me.com"
+        <Joke
+          joke={{
+            setUp: "I invented a new word!",
+            punchline: "Plagiarism!"
           }}
-      />
-
-      <ContactCard
-          contact={{
-            name:"Destroyer",
-            imgUrl:"http://placekitten.com/400/300",
-            phone:"(212) 555-3456",
-            email:"ofworlds@yahoo.com"
+        />
+        <Joke
+          joke={{
+            setUp: "Did you hear about the mathematician who's afraid of numbers?",
+            punchline: "He'll stop at anything to avoid them"
           }}
-      />
-
-      <ContactCard
-          contact={{
-            name:"Felix",
-            imgUrl:"http://placekitten.com/200/100",
-            phone:"(212) 555-4567",
-            email:"thecat@hotmail.com"
+        />
+        <Joke
+          joke={{
+            setUp: "Why do we tell actors to break a leg?",
+            punchline: "Because every play has a cast"
           }}
-      />
-      {/* <MainContent /> */}
-      {/* <Header />
-      <Footer /> */}
-      {/* <h1 style={styles}>Good {timeOfDay} {firstName}!</h1>
-      <h2>It is currently about {hours % 12} o'clock!</h2> */}
-    </div>
+        />
+        <Joke
+          joke={{
+            setUp: "Helvetica and Times New Roman walk into a bar",
+            punchline: "The bartender says get out of here! We don't serve your type here"
+          }}
+        />
+      </div>
   )
 }
 
