@@ -3,8 +3,10 @@ import React from "react"
 // import Header from "./components/Header.js"
 // import Footer from "./components/Footer.js"
 // import ContactCard from "./components/ContactCard.js"
-import Joke from "./components/Joke.js"
-import jokesData from "./jokesData"
+// import Joke from "./components/Joke.js"
+// import jokesData from "./jokesData"
+import productsData from "./productsData"
+import Product from "./components/Product.js"
 
 
 function App() {
@@ -32,11 +34,21 @@ function App() {
   //   styles.color = "#D90000"
   // }
 
-  const jokeComponents = jokesData.map((joke) => {
+  // const jokeComponents = jokesData.map((joke) => {
+  //   return (
+  //     <Joke
+  //       question={joke.question}
+  //       punchLine={joke.punchLine}
+  //     />
+  //   )
+  // })
+
+  const productComponents = productsData.map((product) => {
     return (
-      <Joke
-        question={joke.question}
-        punchLine={joke.punchLine}
+      <Product
+        name={product.name}
+        price={product.price}
+        description={product.description}
       />
     )
   })
@@ -63,7 +75,7 @@ function App() {
                 question="Did you hear about the claustrophobic astronaut?"
                 punchLine="He just needed a little space."
             /> */}
-            {jokeComponents}
+            {productComponents}
       </div>
   )
 }
