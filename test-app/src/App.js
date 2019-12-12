@@ -33,36 +33,27 @@ function App() {
 
   return (
     <div>
-      <Joke
-        joke={{
-          setUp: "What's the best thing about Switzerland?",
-          punchline: "I don't know, but the flag is a big plus"
-        }}
-      />
-        <Joke
-          joke={{
-            setUp: "I invented a new word!",
-            punchline: "Plagiarism!"
-          }}
-        />
-        <Joke
-          joke={{
-            setUp: "Did you hear about the mathematician who's afraid of numbers?",
-            punchline: "He'll stop at anything to avoid them"
-          }}
-        />
-        <Joke
-          joke={{
-            setUp: "Why do we tell actors to break a leg?",
-            punchline: "Because every play has a cast"
-          }}
-        />
-        <Joke
-          joke={{
-            setUp: "Helvetica and Times New Roman walk into a bar",
-            punchline: "The bartender says get out of here! We don't serve your type here"
-          }}
-        />
+            <Joke punchLine="It’s hard to explain puns to kleptomaniacs because they always take things literally." />
+
+            <Joke
+                question="Did you hear about the mathematician who's afraid of negative numbers?"
+                punchLine="He'll stop at nothing to avoid them!"
+            />
+
+            <Joke
+                question="Hear about the new restaurant called Karma?"
+                punchLine="There’s no menu: You get what you deserve."
+            />
+
+            <Joke
+                question="Did you hear about the actor who fell through the floorboards?"
+                punchLine="He was just going through a stage."
+            />
+
+            <Joke
+                question="Did you hear about the claustrophobic astronaut?"
+                punchLine="He just needed a little space."
+            />
       </div>
   )
 }
