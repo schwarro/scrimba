@@ -4,6 +4,7 @@ import React from "react"
 // import Footer from "./components/Footer.js"
 // import ContactCard from "./components/ContactCard.js"
 import Joke from "./components/Joke.js"
+import jokesData from "./jokesData"
 
 
 function App() {
@@ -31,9 +32,17 @@ function App() {
   //   styles.color = "#D90000"
   // }
 
+  const jokeComponents = jokesData.map((joke) => {
+    return (
+      <Joke
+        question={joke.question}
+        punchLine={joke.punchLine}
+      />
+    )
+  })
   return (
     <div>
-            <Joke punchLine="It’s hard to explain puns to kleptomaniacs because they always take things literally." />
+            {/* <Joke punchLine="It’s hard to explain puns to kleptomaniacs because they always take things literally." />
 
             <Joke
                 question="Did you hear about the mathematician who's afraid of negative numbers?"
@@ -53,7 +62,8 @@ function App() {
             <Joke
                 question="Did you hear about the claustrophobic astronaut?"
                 punchLine="He just needed a little space."
-            />
+            /> */}
+            {jokeComponents}
       </div>
   )
 }
