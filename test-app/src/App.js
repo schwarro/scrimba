@@ -5,8 +5,10 @@ import React from "react"
 // import ContactCard from "./components/ContactCard.js"
 // import Joke from "./components/Joke.js"
 // import jokesData from "./jokesData"
-import productsData from "./productsData"
-import Product from "./components/Product.js"
+// import productsData from "./productsData"
+// import Product from "./components/Product.js"
+import todosData from "./todosData"
+import TodoItem from "./components/TodoItem.js"
 
 
 function App() {
@@ -43,12 +45,21 @@ function App() {
   //   )
   // })
 
-  const productComponents = productsData.map((product) => {
+  // const productComponents = productsData.map((product) => {
+  //   return (
+  //     <Product
+  //       name={product.name}
+  //       price={product.price}
+  //       description={product.description}
+  //     />
+  //   )
+  // })
+
+  const todoComponents = todosData.map((todo) => {
     return (
-      <Product
-        name={product.name}
-        price={product.price}
-        description={product.description}
+      <TodoItem
+        key={todo.id}
+        todo={todo.text}
       />
     )
   })
@@ -75,7 +86,7 @@ function App() {
                 question="Did you hear about the claustrophobic astronaut?"
                 punchLine="He just needed a little space."
             /> */}
-            {productComponents}
+            {todoComponents}
       </div>
   )
 }
