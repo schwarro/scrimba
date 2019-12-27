@@ -1,13 +1,12 @@
 import React from "react"
-import TodoItem from "./TodoItem.js"
+import profileData from "../profileData"
+import Card from "./Card.js"
 
 function MainContent() {
+  const profileCards = profileData.map(card => <Card key={card.id} card={card}/>)
   return (
-    <div className="todoList">
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
+    <div>
+      {profileCards}
     </div>
   )
 }

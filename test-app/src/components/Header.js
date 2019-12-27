@@ -1,11 +1,16 @@
 import React from "react"
+import Logo from "../imgs/Logo.png"
 
-function Header() {
-  return (
-    <header className="navbar">
-      This is the header.
-    </header>
-  )
+class Header extends React.Component {
+  render() {
+    return (
+      <div>
+        <header className="navbar">
+          <img src={Logo} alt="The Acuity Ads logo"/>
+        </header>
+      </div>
+    )
+  }
 }
 
 export default Header
