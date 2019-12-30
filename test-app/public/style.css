@@ -9,7 +9,7 @@ body {
     padding: 0;
 }
 
-/* Navbar and logo section */
+/* Navbar section */
 .navbar {
   border-bottom: 3px solid #F16630;
 }
@@ -18,7 +18,7 @@ body {
   margin: 0 auto;
 }
 
-/* End of Navbar and logo section  */
+/* End of Navbar section  */
 
 /* Our Team section  */
 .ourTeam {
@@ -53,11 +53,15 @@ body {
   text-align: center;
 }
 
-.text > h3  {
+h3  {
   color: #F16630;
 }
 
-.text > hr {
+h3, h5 {
+  margin-bottom: 0;
+}
+
+hr {
   border-color: #F16630;
 }
 
@@ -73,13 +77,15 @@ body {
 }
 /* End of footer section  */
 
+
+/* Styling for desktop */
 @media only screen and (min-width: 600px) {
-    /* Logo section  */
+  /* Logo section  */
   .logo {
     margin: 0;
     width: 10%;
   }
-    /* End of logo section  */
+  /* End of logo section  */
 
   /* Main section  */
 
@@ -97,6 +103,7 @@ body {
     display: grid;
     border: 1px solid #CDCDCD;
     grid-template-columns: 20% 20% 20% 20% 20%;
+    /*Grid is for individual card with the image taking up the first 2 columns and the text taking up the remaining 3 */
     margin: 3%;
     border-radius: 10px;
     box-shadow: 0 4px 2px -2px #CDCDCD;
@@ -121,15 +128,10 @@ body {
     font-size: 70%;
   }
 
-  h3, h5 {
-    margin-bottom: 0;
-  }
-
   hr {
     width: 80%;
     text-align: left;
     margin: 0.75rem 0;
-
   }
 
   .button {
@@ -138,8 +140,8 @@ body {
     width: 50%;
     margin-bottom: 1%;
     display: inline-block;
+    /* set up so that the buttom is at the bottom of the card despite how much text is in the profile */
   }
-
   /* End of indivual card section */
 
   /* Card container section  */
@@ -149,6 +151,7 @@ body {
       justify-content: space-between;    /* horizontal alignment of grid tracks */
       align-content: space-between;      /* vertical alignment of grid tracks */
       padding-bottom: 5%;
+      /*grid is used here to have the 4 cards take up their own section in each corner of the container*/
     }
   /* end of card container section  */
 

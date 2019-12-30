@@ -2,6 +2,7 @@ import React from "react"
 
 
 class Title extends React.Component {
+  //contains the text above the individual cards at the top of the page
   render() {
     return (
       <div className="ourTeam">

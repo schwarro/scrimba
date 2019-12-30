@@ -1,3 +1,5 @@
+//Rather than hard code the indivual cards, I created an array of objects that can be made into individual cards usingn .map()
+
 const profileData = [
     {
         id: 1,
