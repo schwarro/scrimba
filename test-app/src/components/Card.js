@@ -7,7 +7,7 @@ function Card(props) {
       <img src={props.card.img} alt="Profile shot of individual"/>
       <div className="cardText">
         <div className="text">
-          <h1>{props.card.name}</h1>
+          <h3>{props.card.name}</h3>
           <h5>{props.card.title}</h5>
           <hr />
           <p>{props.card.profile}</p>
