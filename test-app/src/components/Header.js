@@ -6,7 +6,7 @@ class Header extends React.Component {
     return (
       <div>
         <header className="navbar">
-          <img src={Logo} alt="The Acuity Ads logo"/>
+          <img className="logo" src={Logo} alt="The Acuity Ads logo"/>
         </header>
       </div>
     )

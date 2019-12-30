@@ -5,7 +5,7 @@ import Card from "./Card.js"
 function MainContent() {
   const profileCards = profileData.map(card => <Card key={card.id} card={card}/>)
   return (
-    <div>
+    <div className="cardContainer">
       {profileCards}
     </div>
   )
