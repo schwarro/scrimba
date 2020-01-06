@@ -122,9 +122,6 @@ hr {
     grid-column-end: 6;
     text-align: left;
     padding: 0 5%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
     font-size: 70%;
   }
 

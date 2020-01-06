@@ -4,7 +4,7 @@ import Button from "./Button.js"
 function Card(props) {
   //creates an individual profile card using info from the profileData array
   //each card is it's own div (cards) with the image left alone as it's own element and then the text (cardText) is divided into text and button.
-  //this was done for styling so that grid can be used to properly display the elements
+  //this was done for styling so that grid can be used to properly display the 
   return (
     <div className="cards">
       <img src={props.card.img} alt="Profile shot of individual"/>
