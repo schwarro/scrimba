@@ -3,11 +3,11 @@ import React from "react"
 function TodoItem(props) {
     return (
         <div className="todo-item">
-            <input
+          <input
               type="checkbox"
-              onChange={() => console.log("Changed!")}
               checked={props.item.completed}
-            />
+              onChange={() => props.handleChange(props.item.id)}
+          />
             <p>{props.item.text}</p>
         </div>
     )
