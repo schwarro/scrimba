@@ -23,7 +23,9 @@ class App extends Component {
         return (
             <div>
                 <Header />
-                <Conditional isLoading={this.state.isLoading}/>
+                {this.state.isLoading ?
+                <h1>Loading...</h1> :
+                <Conditional />}
                 <Footer />
             </div>
         )
