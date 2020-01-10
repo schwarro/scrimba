@@ -1,48 +1,40 @@
-import React, {Component} from "react"
-/*
-Given a stateless functional component:
-1. Follow the steps necessary to add state to it,
-2. Have state keep track of whether the user is logged in or not
-3. Add a button that logs the user in/out
-    a. extra challenge - make the button display "log in" if they're not logged in and "log out" if they are
-4. Display text that says "Logged in" if the user is logged in, or "Logged out" if they're not.
-*/
+import React, { Component } from "react"
 
 class App extends Component {
-    constructor() {
-      super()
-      this.state = {
-        isLoggedIn: false
+  constructor() {
+    super()
+    this.state = {
+      isLoggedIn: true
+    }
+    this.handleClick = this.handleClick.bind(this)
+  }
+
+  handleClick() {
+    this.setState(prevState => {
+      return {
+        isLoggedIn: !prevState.isLoggedIn
       }
-      this.handleClick = this.handleClick.bind(this)
-    }
+    })
+  }
 
-    handleClick() {
-      this.setState(prevState => {
-        return {
-          isLoggedIn : !prevState.isLoggedIn
-        }
-      })
-    }
+  render() {
 
-    render() {
+    let wordDisplay
+    let buttonDisplay
 
-      let wordDisplay
-      let buttonDisplay
+    this.state.isLoggedIn ? wordDisplay = "in" : wordDisplay = "out"
 
-      this.state.isLoggedIn ? wordDisplay = "in" : wordDisplay = "out"
+    this.state.isLoggedIn ? buttonDisplay = "Log Out" : buttonDisplay = "Log In"
 
-      this.state.isLoggedIn ? buttonDisplay = "out" : buttonDisplay = "in"
-
-      return (
-          <div>
-              <h1>You are currently logged {wordDisplay}</h1>
-              <button onClick={this.handleClick}>
-                Log {buttonDisplay}
-              </button>
-          </div>
-      )
-    }
+    return (
+        <div>
+            <h1>You are currently logged {wordDisplay}</h1>
+            <button onClick={this.handleClick}>
+              {buttonDisplay}
+            </button>
+        </div>
+    )
+  }
 
 }
 
