@@ -12,7 +12,8 @@ function Conditional(props) {
   // }
   return (
     <div>
-      {props.isLoading ? <h1>Loading...</h1> : <h1>Loaded</h1>}
+      {/* {props.isLoading ? <h1>Loading...</h1> : <h1>Loaded</h1>} */}
+      <h1>Loaded</h1>
     </div>
 
 
